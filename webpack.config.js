@@ -11,14 +11,14 @@ module.exports = {
   devtool: "inline-source-map",
   output: {
     filename: "js/vendor.[hash].js",
-    path: path.join(__dirname, "/dist"),
+    path: path.join(__dirname, "/docs"),
     publicPath: "/",
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
   },
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, "docs"),
     compress: true,
     port: 9001,
   },
